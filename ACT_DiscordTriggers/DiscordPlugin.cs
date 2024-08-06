@@ -9,30 +9,30 @@ using DiscordAPI;
 
 namespace ACT_DiscordTriggers {
   public class DiscordPlugin : UserControl, IActPluginV1 {
-    #region Designer Created Code (Avoid editing)
-    /// <summary> 
-    /// Required designer variable.
-    /// </summary>
-    private System.ComponentModel.IContainer components = null;
+	#region Designer Created Code (Avoid editing)
+	/// <summary> 
+	/// Required designer variable.
+	/// </summary>
+	private System.ComponentModel.IContainer components = null;
 
-    /// <summary> 
-    /// Clean up any resources being used.
-    /// </summary>
-    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-    protected override void Dispose(bool disposing) {
-      if (disposing && (components != null)) {
-        components.Dispose();
-      }
-      base.Dispose(disposing);
-    }
+	/// <summary> 
+	/// Clean up any resources being used.
+	/// </summary>
+	/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+	protected override void Dispose(bool disposing) {
+	  if (disposing && (components != null)) {
+		components.Dispose();
+	  }
+	  base.Dispose(disposing);
+	}
 
-    #region Component Designer generated code
+	#region Component Designer generated code
 
-    /// <summary> 
-    /// Required method for Designer support - do not modify 
-    /// the contents of this method with the code editor.
-    /// </summary>
-    private void InitializeComponent() {
+	/// <summary> 
+	/// Required method for Designer support - do not modify 
+	/// the contents of this method with the code editor.
+	/// </summary>
+	private void InitializeComponent() {
 			this.chkAutoConnect = new System.Windows.Forms.CheckBox();
 			this.discordConnectbtn = new System.Windows.Forms.Button();
 			this.cmbChan = new System.Windows.Forms.ComboBox();
@@ -168,11 +168,11 @@ namespace ACT_DiscordTriggers {
 			// logList
 			// 
 			this.logList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.logList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.listColTim,
-            this.listColMsg});
+			this.listColTim,
+			this.listColMsg});
 			this.logList.FullRowSelect = true;
 			this.logList.HideSelection = false;
 			this.logList.Location = new System.Drawing.Point(21, 255);
@@ -196,7 +196,7 @@ namespace ACT_DiscordTriggers {
 			// txtArguments
 			// 
 			this.txtArguments.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.txtArguments.Location = new System.Drawing.Point(292, 15);
 			this.txtArguments.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.txtArguments.Name = "txtArguments";
@@ -208,8 +208,8 @@ namespace ACT_DiscordTriggers {
 			// lblArguments
 			// 
 			this.lblArguments.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.lblArguments.AutoSize = true;
 			this.lblArguments.Location = new System.Drawing.Point(221, 18);
 			this.lblArguments.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -222,8 +222,8 @@ namespace ACT_DiscordTriggers {
 			// lblTTSBinary
 			// 
 			this.lblTTSBinary.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.lblTTSBinary.AutoSize = true;
 			this.lblTTSBinary.Location = new System.Drawing.Point(224, 70);
 			this.lblTTSBinary.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -236,8 +236,8 @@ namespace ACT_DiscordTriggers {
 			// txtTTSBinaryPath
 			// 
 			this.txtTTSBinaryPath.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.txtTTSBinaryPath.Location = new System.Drawing.Point(292, 70);
 			this.txtTTSBinaryPath.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.txtTTSBinaryPath.Name = "txtTTSBinaryPath";
@@ -250,7 +250,7 @@ namespace ACT_DiscordTriggers {
 			// btnSelectBinary
 			// 
 			this.btnSelectBinary.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.btnSelectBinary.Location = new System.Drawing.Point(785, 70);
 			this.btnSelectBinary.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.btnSelectBinary.Name = "btnSelectBinary";
@@ -263,7 +263,7 @@ namespace ACT_DiscordTriggers {
 			// lstLogs
 			// 
 			this.lstLogs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.lstLogs.FormattingEnabled = true;
 			this.lstLogs.Location = new System.Drawing.Point(227, 102);
 			this.lstLogs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -274,8 +274,8 @@ namespace ACT_DiscordTriggers {
 			// lblPipe
 			// 
 			this.lblPipe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.lblPipe.AutoSize = true;
 			this.lblPipe.Location = new System.Drawing.Point(221, 37);
 			this.lblPipe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -288,7 +288,7 @@ namespace ACT_DiscordTriggers {
 			// chkUsePipe
 			// 
 			this.chkUsePipe.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+			| System.Windows.Forms.AnchorStyles.Left)));
 			this.chkUsePipe.AutoSize = true;
 			this.chkUsePipe.Location = new System.Drawing.Point(292, 37);
 			this.chkUsePipe.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -301,8 +301,8 @@ namespace ACT_DiscordTriggers {
 			// lblUseSocket
 			// 
 			this.lblUseSocket.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.lblUseSocket.AutoSize = true;
 			this.lblUseSocket.Location = new System.Drawing.Point(221, 54);
 			this.lblUseSocket.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -315,7 +315,7 @@ namespace ACT_DiscordTriggers {
 			// chkUseSocket
 			// 
 			this.chkUseSocket.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+			| System.Windows.Forms.AnchorStyles.Left)));
 			this.chkUseSocket.AutoSize = true;
 			this.chkUseSocket.Location = new System.Drawing.Point(292, 53);
 			this.chkUseSocket.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -361,32 +361,32 @@ namespace ACT_DiscordTriggers {
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
-    }
+	}
 
-    #endregion
+	#endregion
 
-    #endregion
+	#endregion
 
-    #region Init Variables
-    FormActMain.PlayTtsDelegate oldTTS;
-    FormActMain.PlaySoundDelegate oldSound;
-    Label lblStatus;
-    string settingsFile;
-    SettingsSerializer xmlSettings;
-    private CheckBox chkAutoConnect;
-    private Button discordConnectbtn;
-    private ComboBox cmbChan;
-    private Label lblChan;
-    private ComboBox cmbServer;
-    private Label lblServer;
-    private Button btnLeave;
-    private Button btnJoin;
-    private Label lblLog;
-    private TextBox txtToken;
-    private ListView logList;
-    private ColumnHeader listColTim;
-    private ColumnHeader listColMsg;
-    private Label lblBotTok;
+	#region Init Variables
+	FormActMain.PlayTtsDelegate oldTTS;
+	FormActMain.PlaySoundDelegate oldSound;
+	Label lblStatus;
+	string settingsFile;
+	SettingsSerializer xmlSettings;
+	private CheckBox chkAutoConnect;
+	private Button discordConnectbtn;
+	private ComboBox cmbChan;
+	private Label lblChan;
+	private ComboBox cmbServer;
+	private Label lblServer;
+	private Button btnLeave;
+	private Button btnJoin;
+	private Label lblLog;
+	private TextBox txtToken;
+	private ListView logList;
+	private ColumnHeader listColTim;
+	private ColumnHeader listColMsg;
+	private Label lblBotTok;
 		#endregion
 
 		private TextBox txtArguments;
@@ -401,32 +401,29 @@ namespace ACT_DiscordTriggers {
 		private CheckBox chkUseSocket;
 		private TTSHandler ttsHandler;
 	public DiscordPlugin() {
-      //Load UI Components and Assemblies
-      AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
-      InitializeComponent();
+	  //Load UI Components and Assemblies
+	  AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
+	  InitializeComponent();
 
-      //Add installed voices to dropdown
-      //var tts = new SpeechSynthesizer();
-      //foreach (InstalledVoice v in tts.GetInstalledVoices())
-      //  cmbTTS.Items.Add(v.VoiceInfo.Name);
-      //cmbTTS.SelectedIndex = 0;
-    }
+	  //Add installed voices to dropdown
+	  //var tts = new SpeechSynthesizer();
+	  //foreach (InstalledVoice v in tts.GetInstalledVoices())
+	  //  cmbTTS.Items.Add(v.VoiceInfo.Name);
+	  //cmbTTS.SelectedIndex = 0;
+	}
 
 	#region LinuxTTS
 	private OpenFileDialog opnTTS;
 
 	void PlayTTS(string text)
 	{
-		if (chkUsePipe.Checked)
-		{
+		if (chkUsePipe.Checked) {
 			ttsHandler.Play(text);
 		}
-		else if (chkUseSocket.Checked)
-		{
+		else if (chkUseSocket.Checked) {
 			ttsHandler.PlaySocket(text);
 		}
-		else
-		{
+		else {
 			ttsHandler.PlaySingle(text);
 		}
 	}
@@ -434,96 +431,96 @@ namespace ACT_DiscordTriggers {
 	{
 		opnTTS.ShowDialog();
 	}
-    private void OpnTTS_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
-    {
-        txtTTSBinaryPath.Text = opnTTS.FileName;
-        ttsHandler.Command = opnTTS.FileName;
-        if (chkUsePipe.Checked)
-        {
-            ttsHandler.Restart();
-        }
-    }
-    private void ChkUseSocket_CheckChanged(object sender, EventArgs eventArgs)
-    {
-        if (chkUseSocket.Checked)
-        {
-            ttsHandler.Close();
-            txtTTSBinaryPath.ReadOnly = false;
-            txtArguments.ReadOnly = true;
-            chkUsePipe.Checked = false;
-            lblTTSBinary.Text = "Socket Mode: TTSServer Address (IP Only)";
-        } else {
-            if(!chkUsePipe.Checked) {
-                txtArguments.ReadOnly = false;
-                txtTTSBinaryPath.ReadOnly = true;
-            }
-            lblTTSBinary.Text = "TTS Binary";
-        }
-    }
+	private void OpnTTS_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+	{
+		txtTTSBinaryPath.Text = opnTTS.FileName;
+		ttsHandler.Command = opnTTS.FileName;
+		if (chkUsePipe.Checked)
+		{
+			ttsHandler.Restart();
+		}
+	}
+	private void ChkUseSocket_CheckChanged(object sender, EventArgs eventArgs)
+	{
+		if (chkUseSocket.Checked)
+		{
+			ttsHandler.Close();
+			txtTTSBinaryPath.ReadOnly = false;
+			txtArguments.ReadOnly = true;
+			chkUsePipe.Checked = false;
+			lblTTSBinary.Text = "Socket Mode: TTSServer Address (IP Only)";
+		} else {
+			if(!chkUsePipe.Checked) {
+				txtArguments.ReadOnly = false;
+				txtTTSBinaryPath.ReadOnly = true;
+			}
+			lblTTSBinary.Text = "TTS Binary";
+		}
+	}
 	private void ChkUsePipe_CheckedChanged(object sender, EventArgs e)
-    {
-        if (chkUsePipe.Checked)
-        {
-            ttsHandler.Restart();
-            txtTTSBinaryPath.ReadOnly = true;
-            txtArguments.ReadOnly = false;
-            chkUseSocket.Checked = false;
-            lblTTSBinary.Text = "Pipe mode: TTS Binary";
-        } else {
-            if(!chkUseSocket.Checked) {
-                txtArguments.ReadOnly = false;
-                txtTTSBinaryPath.ReadOnly = true;
-            }
-            ttsHandler.Close();
-            lblTTSBinary.Text = "TTS Binary";
-        }
-    }
+	{
+		if (chkUsePipe.Checked)
+		{
+			ttsHandler.Restart();
+			txtTTSBinaryPath.ReadOnly = true;
+			txtArguments.ReadOnly = false;
+			chkUseSocket.Checked = false;
+			lblTTSBinary.Text = "Pipe mode: TTS Binary";
+		} else {
+			if(!chkUseSocket.Checked) {
+				txtArguments.ReadOnly = false;
+				txtTTSBinaryPath.ReadOnly = true;
+			}
+			ttsHandler.Close();
+			lblTTSBinary.Text = "TTS Binary";
+		}
+	}
 	private void TxtArguments_Leave(object sender, EventArgs e)
-    {
-        ttsHandler.CommandArguments = txtArguments.Text;
-        if (chkUsePipe.Checked && !chkUseSocket.Checked)
-        {
-            ttsHandler.CommandArguments += " --stdin";
-            ttsHandler.Restart();
-        }
-    }
-    private void TxtBinaryPath_Leave(object sender, EventArgs e)
-    {
-        ttsHandler.Command = txtTTSBinaryPath.Text;
-    }
+	{
+		ttsHandler.CommandArguments = txtArguments.Text;
+		if (chkUsePipe.Checked && !chkUseSocket.Checked)
+		{
+			ttsHandler.CommandArguments += " --stdin";
+			ttsHandler.Restart();
+		}
+	}
+	private void TxtBinaryPath_Leave(object sender, EventArgs e)
+	{
+		ttsHandler.Command = txtTTSBinaryPath.Text;
+	}
 
 	#endregion
 
 	#region IActPluginV1 Members
 	public void InitPlugin(TabPage pluginScreenSpace, Label pluginStatusText) {
-      //ACT Stuff
-      oldTTS = ActGlobals.oFormActMain.PlayTtsMethod;
-      oldSound = ActGlobals.oFormActMain.PlaySoundMethod;
-      lblStatus = pluginStatusText;
-      pluginScreenSpace.Controls.Add(this);
-      pluginScreenSpace.Text = "Discord Triggers";
-      Dock = DockStyle.Fill;
+	  //ACT Stuff
+	  oldTTS = ActGlobals.oFormActMain.PlayTtsMethod;
+	  oldSound = ActGlobals.oFormActMain.PlaySoundMethod;
+	  lblStatus = pluginStatusText;
+	  pluginScreenSpace.Controls.Add(this);
+	  pluginScreenSpace.Text = "Discord Triggers";
+	  Dock = DockStyle.Fill;
 
-      //Get plugin name
-      string configName = "ACT_DiscordTriggers";
-      try {
-        string pluginName = ActGlobals.oFormActMain.PluginGetSelfData(this).pluginFile.FullName;
-        pluginName = Path.GetFileNameWithoutExtension(pluginName).Trim();
-        if (pluginName.Length >= 0)
-          configName = pluginName;
-      } catch (Exception) { }
+	  //Get plugin name
+	  string configName = "ACT_DiscordTriggers";
+	  try {
+		string pluginName = ActGlobals.oFormActMain.PluginGetSelfData(this).pluginFile.FullName;
+		pluginName = Path.GetFileNameWithoutExtension(pluginName).Trim();
+		if (pluginName.Length >= 0)
+		  configName = pluginName;
+	  } catch (Exception) { }
 
-      //Load Settings file
-      settingsFile = Path.Combine(ActGlobals.oFormActMain.AppDataFolder.FullName, $"Config\\{configName}.config.xml");
-      xmlSettings = new SettingsSerializer(this);
-      LoadSettings();
+	  //Load Settings file
+	  settingsFile = Path.Combine(ActGlobals.oFormActMain.AppDataFolder.FullName, $"Config\\{configName}.config.xml");
+	  xmlSettings = new SettingsSerializer(this);
+	  LoadSettings();
 
-      //Discord Bot Stuff
-      DiscordClient.BotReady += BotReady;
-      DiscordClient.Log += Log;
+	  //Discord Bot Stuff
+	  DiscordClient.BotReady += BotReady;
+	  DiscordClient.Log += Log;
 
-      if (chkAutoConnect.Checked)
-        discordConnectbtn_Click(null, EventArgs.Empty);
+	  if (chkAutoConnect.Checked)
+		discordConnectbtn_Click(null, EventArgs.Empty);
 
 	  //Linux TTS Stuff
 		ttsHandler = new TTSHandler(lstLogs);
@@ -535,7 +532,7 @@ namespace ACT_DiscordTriggers {
 		ActGlobals.oFormActMain.PlayTtsMethod = new FormActMain.PlayTtsDelegate(PlayTTS);
 		}
 
-    public async void DeInitPlugin() {
+	public async void DeInitPlugin() {
 		ActGlobals.oFormActMain.PlayTtsMethod = oldTTS;
 		ActGlobals.oFormActMain.PlaySoundMethod = oldSound;
 		SaveSettings();
@@ -553,210 +550,210 @@ namespace ACT_DiscordTriggers {
 			}
 		}
 		lblStatus.Text = "Plugin Exited";
-    }
+	}
 
-    private Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args) {
-      try {
-        var asm = new AssemblyName(args.Name);
-        var plugin = ActGlobals.oFormActMain.PluginGetSelfData(this);
-        string file;
-        if (plugin != null) {
-          file = plugin.pluginFile.DirectoryName;
-          file = Path.Combine(file, asm.Name + ".dll");
-          if (File.Exists(file)) {
-            return Assembly.LoadFile(file);
-          }
-        }
-        file = Path.Combine(ActGlobals.oFormActMain.AppDataFolder.FullName, "Plugins\\Discord");
-        file = Path.Combine(file, asm.Name + ".dll");
-        if (File.Exists(file)) {
-          return Assembly.LoadFrom(file);
-        }
-      } catch (Exception ex) {
-        ActGlobals.oFormActMain.WriteExceptionLog(ex, "Error with loading an assembly for Discord Plugin.");
-      }
-      return null;
-    }
-    #endregion
+	private Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args) {
+	  try {
+		var asm = new AssemblyName(args.Name);
+		var plugin = ActGlobals.oFormActMain.PluginGetSelfData(this);
+		string file;
+		if (plugin != null) {
+		  file = plugin.pluginFile.DirectoryName;
+		  file = Path.Combine(file, asm.Name + ".dll");
+		  if (File.Exists(file)) {
+			return Assembly.LoadFile(file);
+		  }
+		}
+		file = Path.Combine(ActGlobals.oFormActMain.AppDataFolder.FullName, "Plugins\\Discord");
+		file = Path.Combine(file, asm.Name + ".dll");
+		if (File.Exists(file)) {
+		  return Assembly.LoadFrom(file);
+		}
+	  } catch (Exception ex) {
+		ActGlobals.oFormActMain.WriteExceptionLog(ex, "Error with loading an assembly for Discord Plugin.");
+	  }
+	  return null;
+	}
+	#endregion
 
-    #region Discord Methods
-    private void speak(string text) {
-      Log("Playing TTS for text: " + text);
-      try {
-        DiscordClient.Speak(text, "", 0, 0);
-      } catch (Exception ex) {
-        Log("Error playing TTS");
-        Log(ex.Message);
-      }
-    }
+	#region Discord Methods
+	private void speak(string text) {
+	  Log("Playing TTS for text: " + text);
+	  try {
+		DiscordClient.Speak(text, "", 0, 0);
+	  } catch (Exception ex) {
+		Log("Error playing TTS");
+		Log(ex.Message);
+	  }
+	}
 
-    private void speakFile(string path, int volume) {
-      Log("Playing Audio file: " + path);
-      try {
-        DiscordClient.SpeakFile(path);
-      } catch (Exception ex) {
-        Log("Error playing File");
-        Log(ex.Message);
-      }
-    }
+	private void speakFile(string path, int volume) {
+	  Log("Playing Audio file: " + path);
+	  try {
+		DiscordClient.SpeakFile(path);
+	  } catch (Exception ex) {
+		Log("Error playing File");
+		Log(ex.Message);
+	  }
+	}
 
-    private void BotReady() {
-      btnJoin.Enabled = true;
-      populateServers();
-    }
-
-
-    private void populateServers() {
-      try {
-        string[] servers = DiscordClient.getServers();
-        Log("Found " + servers.Length + " discord server(s).");
-
-        cmbServer.Items.Clear();
-        cmbChan.Items.Clear();
-
-        foreach (string server in servers)
-          cmbServer.Items.Add(server);
-
-        if (cmbServer.Items.Count > 0)
-          cmbServer.SelectedIndex = 0;
-      } catch (Exception ex) {
-        Log("Error populating servers.");
-        Log(ex.Message);
-      }
-    }
-
-    private void populateChannels(string server) {
-      try {
-        cmbChan.Items.Clear();
-        cmbChan.Items.AddRange(DiscordClient.getChannels(server));
-        if (cmbChan.Items.Count > 0) {
-          cmbChan.SelectedIndex = 0;
-          Log("Found " + cmbChan.Items.Count + " available voice channel(s) for " + server);
-        } else {
-          Log("Error: Could not find any available voice channels for " + server);
-        }
-      } catch (Exception ex) {
-        Log("Error populating channels.");
-        Log(ex.Message);
-      }
-    }
-    #endregion
-
-    #region UI Events
-    private async void btnJoin_Click(object sender, EventArgs e) {
-
-      btnJoin.Enabled = false;
-      if (await DiscordClient.JoinChannel(cmbServer.SelectedItem.ToString(), cmbChan.SelectedItem.ToString())) {
-        btnLeave.Enabled = true;
-        ActGlobals.oFormActMain.PlayTtsMethod = speak;
-        ActGlobals.oFormActMain.PlaySoundMethod = speakFile;
-      } else {
-        Log("Unable to join channel. Does your bot have permission to join this channel?");
-        btnJoin.Enabled = true;
-        populateServers();
-      }
-    }
-
-    private void btnLeave_Click(object sender, EventArgs e) {
-      btnLeave.Enabled = false;
-      try {
-        DiscordClient.LeaveChannel();
-        btnJoin.Enabled = true;
-        btnLeave.Enabled = false;
-        Log("Left channel.");
-        ActGlobals.oFormActMain.PlayTtsMethod = oldTTS;
-        ActGlobals.oFormActMain.PlaySoundMethod = oldSound;
-        btnJoin.Enabled = true;
-      } catch (Exception ex) {
-        Log("Error leaving channel. Possible connection issue.");
-        btnLeave.Enabled = true;
-        Log(ex.Message);
-      }
-    }
-
-    private void cmbServer_SelectedIndexChanged(object sender, EventArgs e) {
-      populateChannels(cmbServer.SelectedItem.ToString());
-    }
-
-    private void discordConnectbtn_Click(object sender, EventArgs e) {
-
-      if (DiscordClient.IsConnected()) {
-        Log("Already connected to Discord.");
-        return;
-      }
-      DiscordClient.InIt(txtToken.Text);
-    }
-
-    private void LogList_KeyUp(object sender, KeyEventArgs e) {
-      if (sender != logList)
-        return;
+	private void BotReady() {
+	  btnJoin.Enabled = true;
+	  populateServers();
+	}
 
 
-      if (e.Control && e.KeyCode == Keys.C && logList.SelectedItems.Count > 0) {
-        var builder = new StringBuilder();
-        foreach (ListViewItem item in logList.SelectedItems)
-          builder.AppendLine(item.SubItems[1].Text);
+	private void populateServers() {
+	  try {
+		string[] servers = DiscordClient.getServers();
+		Log("Found " + servers.Length + " discord server(s).");
 
-        string clipboard = builder.ToString();
-        if (clipboard.Length > 0)
-          Clipboard.SetText(builder.ToString());
-      }
-    }
-    #endregion
+		cmbServer.Items.Clear();
+		cmbChan.Items.Clear();
 
-    #region Settings
-    public void Log(string text) {
-      string[] row = new string[2];
-      row[0] = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
-      row[1] = text;
-      logList.Items.Add(new ListViewItem(row));
-    }
+		foreach (string server in servers)
+		  cmbServer.Items.Add(server);
 
-    public void LoadSettings() {
-      xmlSettings.AddControlSetting(txtToken.Name, txtToken);
-      xmlSettings.AddControlSetting(chkAutoConnect.Name, chkAutoConnect);
+		if (cmbServer.Items.Count > 0)
+		  cmbServer.SelectedIndex = 0;
+	  } catch (Exception ex) {
+		Log("Error populating servers.");
+		Log(ex.Message);
+	  }
+	}
+
+	private void populateChannels(string server) {
+	  try {
+		cmbChan.Items.Clear();
+		cmbChan.Items.AddRange(DiscordClient.getChannels(server));
+		if (cmbChan.Items.Count > 0) {
+		  cmbChan.SelectedIndex = 0;
+		  Log("Found " + cmbChan.Items.Count + " available voice channel(s) for " + server);
+		} else {
+		  Log("Error: Could not find any available voice channels for " + server);
+		}
+	  } catch (Exception ex) {
+		Log("Error populating channels.");
+		Log(ex.Message);
+	  }
+	}
+	#endregion
+
+	#region UI Events
+	private async void btnJoin_Click(object sender, EventArgs e) {
+
+	  btnJoin.Enabled = false;
+	  if (await DiscordClient.JoinChannel(cmbServer.SelectedItem.ToString(), cmbChan.SelectedItem.ToString())) {
+		btnLeave.Enabled = true;
+		ActGlobals.oFormActMain.PlayTtsMethod = speak;
+		ActGlobals.oFormActMain.PlaySoundMethod = speakFile;
+	  } else {
+		Log("Unable to join channel. Does your bot have permission to join this channel?");
+		btnJoin.Enabled = true;
+		populateServers();
+	  }
+	}
+
+	private void btnLeave_Click(object sender, EventArgs e) {
+	  btnLeave.Enabled = false;
+	  try {
+		DiscordClient.LeaveChannel();
+		btnJoin.Enabled = true;
+		btnLeave.Enabled = false;
+		Log("Left channel.");
+		ActGlobals.oFormActMain.PlayTtsMethod = oldTTS;
+		ActGlobals.oFormActMain.PlaySoundMethod = oldSound;
+		btnJoin.Enabled = true;
+	  } catch (Exception ex) {
+		Log("Error leaving channel. Possible connection issue.");
+		btnLeave.Enabled = true;
+		Log(ex.Message);
+	  }
+	}
+
+	private void cmbServer_SelectedIndexChanged(object sender, EventArgs e) {
+	  populateChannels(cmbServer.SelectedItem.ToString());
+	}
+
+	private void discordConnectbtn_Click(object sender, EventArgs e) {
+
+	  if (DiscordClient.IsConnected()) {
+		Log("Already connected to Discord.");
+		return;
+	  }
+	  DiscordClient.InIt(txtToken.Text);
+	}
+
+	private void LogList_KeyUp(object sender, KeyEventArgs e) {
+	  if (sender != logList)
+		return;
+
+
+	  if (e.Control && e.KeyCode == Keys.C && logList.SelectedItems.Count > 0) {
+		var builder = new StringBuilder();
+		foreach (ListViewItem item in logList.SelectedItems)
+		  builder.AppendLine(item.SubItems[1].Text);
+
+		string clipboard = builder.ToString();
+		if (clipboard.Length > 0)
+		  Clipboard.SetText(builder.ToString());
+	  }
+	}
+	#endregion
+
+	#region Settings
+	public void Log(string text) {
+	  string[] row = new string[2];
+	  row[0] = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
+	  row[1] = text;
+	  logList.Items.Add(new ListViewItem(row));
+	}
+
+	public void LoadSettings() {
+	  xmlSettings.AddControlSetting(txtToken.Name, txtToken);
+	  xmlSettings.AddControlSetting(chkAutoConnect.Name, chkAutoConnect);
 	  xmlSettings.AddControlSetting(txtArguments.Name, txtArguments);
 	  xmlSettings.AddControlSetting(chkUsePipe.Name, chkUsePipe);
 	  xmlSettings.AddControlSetting(txtTTSBinaryPath.Name, txtTTSBinaryPath);
 	  xmlSettings.AddControlSetting(chkUseSocket.Name, chkUseSocket);
 		if (File.Exists(settingsFile)) {
-        FileStream fs = new FileStream(settingsFile, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-        XmlTextReader xReader = new XmlTextReader(fs);
-        try {
-          while (xReader.Read())
-            if (xReader.NodeType == XmlNodeType.Element)
-              if (xReader.LocalName == "SettingsSerializer")
-                xmlSettings.ImportFromXml(xReader);
-        } catch (Exception ex) {
-          lblStatus.Text = "Error loading settings: " + ex.Message;
-        }
-        xReader.Close();
-      }
+		FileStream fs = new FileStream(settingsFile, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+		XmlTextReader xReader = new XmlTextReader(fs);
+		try {
+		  while (xReader.Read())
+			if (xReader.NodeType == XmlNodeType.Element)
+			  if (xReader.LocalName == "SettingsSerializer")
+				xmlSettings.ImportFromXml(xReader);
+		} catch (Exception ex) {
+		  lblStatus.Text = "Error loading settings: " + ex.Message;
+		}
+		xReader.Close();
+	  }
 	//ttsHandler.CommandArguments = txtArguments.Text;
 	//ttsHandler.Command = txtTTSBinaryPath.Text;
 	}
 
-    public bool SaveSettings() {
-      try {
-        FileStream fs = new FileStream(settingsFile, FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
-        XmlTextWriter xWriter = new XmlTextWriter(fs, Encoding.UTF8);
-        xWriter.Formatting = Formatting.Indented;
-        xWriter.Indentation = 1;
-        xWriter.IndentChar = '\t';
-        xWriter.WriteStartDocument(true);
-        xWriter.WriteStartElement("Config");
-        xWriter.WriteStartElement("SettingsSerializer");
-        xmlSettings.ExportToXml(xWriter);
-        xWriter.WriteEndElement();
-        xWriter.WriteEndElement();
-        xWriter.WriteEndDocument();
-        xWriter.Flush();
-        xWriter.Close();
-      } catch {
-        return false;
-      }
-      return true;
-    }
+	public bool SaveSettings() {
+	  try {
+		FileStream fs = new FileStream(settingsFile, FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
+		XmlTextWriter xWriter = new XmlTextWriter(fs, Encoding.UTF8);
+		xWriter.Formatting = Formatting.Indented;
+		xWriter.Indentation = 1;
+		xWriter.IndentChar = '\t';
+		xWriter.WriteStartDocument(true);
+		xWriter.WriteStartElement("Config");
+		xWriter.WriteStartElement("SettingsSerializer");
+		xmlSettings.ExportToXml(xWriter);
+		xWriter.WriteEndElement();
+		xWriter.WriteEndElement();
+		xWriter.WriteEndDocument();
+		xWriter.Flush();
+		xWriter.Close();
+	  } catch {
+		return false;
+	  }
+	  return true;
+	}
 		#endregion
 	}
 }

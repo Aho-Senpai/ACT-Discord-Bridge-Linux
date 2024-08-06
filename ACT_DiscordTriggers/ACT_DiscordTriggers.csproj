@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net481</TargetFramework>
     <AssemblyTitle>ACT_DiscordTriggers</AssemblyTitle>
     <AssemblyVersion>1.0.2.4</AssemblyVersion>
     <FileVersion>1.0.2.4</FileVersion>
